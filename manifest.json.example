@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "requiredSpace": 500,
+  "packs": [
+    {
+      "name": "CoreAssets",
+      "version": "1.0.0",
+      "size": 52428800,
+      "checksum": "abc123def456",
+      "url": "https://dl.dropboxusercontent.com/s/your-file-id/CoreAssets.zip",
+      "required": true,
+      "priority": 1,
+      "description": "Core game assets (maps, characters, tilesets)"
+    },
+    {
+      "name": "Audio_BGM",
+      "version": "1.0.0",
+      "size": 31457280,
+      "checksum": "ghi789jkl012",
+      "url": "https://dl.dropboxusercontent.com/s/your-file-id/Audio_BGM.zip",
+      "required": true,
+      "priority": 2,
+      "description": "Background music files"
+    },
+    {
+      "name": "Audio_SE",
+      "version": "1.0.0",
+      "size": 10485760,
+      "checksum": "mno345pqr678",
+      "url": "https://dl.dropboxusercontent.com/s/your-file-id/Audio_SE.zip",
+      "required": true,
+      "priority": 3,
+      "description": "Sound effects"
+    },
+    {
+      "name": "Movies",
+      "version": "1.0.0",
+      "size": 104857600,
+      "checksum": "stu901vwx234",
+      "url": "https://dl.dropboxusercontent.com/s/your-file-id/Movies.zip",
+      "required": false,
+      "priority": 4,
+      "description": "Cutscene videos (optional)"
+    }
+  ]
+}
