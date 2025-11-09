@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Knights - Quick Reference Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .quick-ref-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-xl);
+        }
+
+        .quick-ref-header {
+            text-align: center;
+            padding: var(--spacing-xl);
+            background: linear-gradient(135deg, var(--azure-dark) 0%, var(--azure-primary) 100%);
+            border-radius: 12px;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .quick-ref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .ref-card {
+            background: var(--bg-secondary);
+            border: 2px solid var(--azure-primary);
+            border-radius: 12px;
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .ref-card h3 {
+            color: var(--azure-light);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--azure-primary);
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .ref-table {
+            width: 100%;
+            margin: var(--spacing-sm) 0;
+        }
+
+        .ref-table tr {
+            border-bottom: 1px solid var(--bg-tertiary);
+        }
+
+        .ref-table td {
+            padding: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+
+        .ref-table td:first-child {
+            font-weight: 600;
+            color: var(--azure-glow);
+            width: 40%;
+        }
+
+        .ref-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ref-list li {
+            padding: var(--spacing-xs);
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-secondary);
+            border-left: 3px solid var(--azure-secondary);
+            padding-left: var(--spacing-sm);
+        }
+
+        .cheat-sheet {
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+            border: 2px solid var(--dellastro-gold);
+            border-radius: 12px;
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .cheat-sheet h3 {
+            color: var(--dellastro-gold);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .tip-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid var(--azure-secondary);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            border-radius: 4px;
+        }
+
+        .tip-box strong {
+            color: var(--azure-light);
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            background: var(--azure-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all var(--transition-base);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .back-link:hover {
+            background: var(--azure-secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+    </style>
+</head>
+<body>
+    <div class="quick-ref-container">
+        <a href="index.html" class="back-link">← Back to Full Documentation</a>
+
+        <div class="quick-ref-header">
+            <h1 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: var(--spacing-sm);">
+                AZURE KNIGHTS
+            </h1>
+            <h2 style="color: var(--azure-light); font-size: 1.5rem;">Quick Reference Guide</h2>
+            <p style="color: var(--text-secondary); margin-top: var(--spacing-sm);">
+                Essential information at a glance
+            </p>
+        </div>
+
+        <!-- Core Systems -->
+        <div class="cheat-sheet">
+            <h3>⚡ Core Systems Cheat Sheet</h3>
+            <div class="tip-box">
+                <strong>30-Day Deadline:</strong> You have 30 in-game days to reignite all 9 Azure Monuments and save the world. Main Story quests do NOT consume time!
+            </div>
+            <div class="tip-box">
+                <strong>Action Points (AP):</strong> You have 3 AP per day. Sleeping restores AP but advances time by 1 day. Use AP wisely!
+            </div>
+            <div class="tip-box">
+                <strong>One-Day Main Quest:</strong> Character story quests happen in a single day but don't consume deadline time. You'll be locked to that area until complete.
+            </div>
+        </div>
+
+        <div class="quick-ref-grid">
+            <!-- Characters Overview -->
+            <div class="ref-card">
+                <h3>🏰 Heaver Fortress</h3>
+                <table class="ref-table">
+                    <tr>
+                        <td>Tyrell</td>
+                        <td>Guardian | Azure of Valor</td>
+                    </tr>
+                    <tr>
+                        <td>Miya</td>
+                        <td>Marksman | Azure of Silence</td>
+                    </tr>
+                    <tr>
+                        <td>Celine</td>
+                        <td>Ravager | Azure of Remorse</td>
+                    </tr>
+                </table>
+                <p style="color: var(--text-muted); margin-top: var(--spacing-sm); font-style: italic;">
+                    Theme: Sacrifice & Honor
+                </p>
+            </div>
+
+            <div class="ref-card">
+                <h3>👑 Dellastro Capital</h3>
+                <table class="ref-table">
+                    <tr>
+                        <td>Kyle</td>
+                        <td>Synergist | Azure of Mercy</td>
+                    </tr>
+                    <tr>
+                        <td>Violet</td>
+                        <td>Guardian | Azure of Law</td>
+                    </tr>
+                    <tr>
+                        <td>Hilda</td>
+                        <td>Mystic | Azure of Secrets</td>
+                    </tr>
+                </table>
+                <p style="color: var(--text-muted); margin-top: var(--spacing-sm); font-style: italic;">
+                    Theme: Truth vs Lies
+                </p>
+            </div>
+
+            <div class="ref-card">
+                <h3>🌳 Lyric Glade</h3>
+                <table class="ref-table">
+                    <tr>
+                        <td>Hayabusa</td>
+                        <td>Swordmaster | Azure of Wind</td>
+                    </tr>
+                    <tr>
+                        <td>Lyodra</td>
+                        <td>Mystic | Azure of Song</td>
+                    </tr>
+                    <tr>
+                        <td>Freya</td>
+                        <td>Marksman | Azure of Hunt</td>
+                    </tr>
+                </table>
+                <p style="color: var(--text-muted); margin-top: var(--spacing-sm); font-style: italic;">
+                    Theme: Eternity vs Mortality
+                </p>
+            </div>
+
+            <div class="ref-card">
+                <h3>⚔️ Tsuyoi Country</h3>
+                <table class="ref-table">
+                    <tr>
+                        <td>Masamune</td>
+                        <td>Swordmaster | Azure of Blade</td>
+                    </tr>
+                    <tr>
+                        <td>Ayane</td>
+                        <td>Synergist | Azure of Grace</td>
+                    </tr>
+                    <tr>
+                        <td>Chang'e</td>
+                        <td>Ravager | Azure of Moon</td>
+                    </tr>
+                </table>
+                <p style="color: var(--text-muted); margin-top: var(--spacing-sm); font-style: italic;">
+                    Theme: Redemption & Legacy
+                </p>
+            </div>
+
+            <!-- Combat Classes -->
+            <div class="ref-card">
+                <h3>⚔️ Combat Classes</h3>
+                <ul class="ref-list">
+                    <li><strong>Guardian</strong> - Tank / CC / Debuff</li>
+                    <li><strong>Marksman</strong> - Ranged Physical DPS</li>
+                    <li><strong>Swordmaster</strong> - Melee Physical DPS</li>
+                    <li><strong>Ravager</strong> - Melee Sub-DPS / CC</li>
+                    <li><strong>Mystic</strong> - Magical DPS / Burst</li>
+                    <li><strong>Synergist</strong> - Support / Healer</li>
+                </ul>
+            </div>
+
+            <!-- AP Usage -->
+            <div class="ref-card">
+                <h3>⚡ AP Activities</h3>
+                <ul class="ref-list">
+                    <li>Refresh dungeon monsters</li>
+                    <li>Summon rare/boss monsters</li>
+                    <li>Claim dungeon rewards</li>
+                    <li>Claim town rewards</li>
+                    <li>Hang Out with NPCs</li>
+                    <li>Explore Endless Tower</li>
+                    <li>Increase monster intimacy</li>
+                </ul>
+            </div>
+
+            <!-- Nine Monuments -->
+            <div class="ref-card">
+                <h3>🏛️ Nine Monuments</h3>
+                <ul class="ref-list">
+                    <li>🦁 <strong>Valor</strong> - Courage & Duty</li>
+                    <li>🕊️ <strong>Mercy</strong> - Faith & Healing</li>
+                    <li>🪶 <strong>Wind</strong> - Freedom & Change</li>
+                    <li>🐉 <strong>Blade</strong> - Honor & Strength</li>
+                    <li>🌙 <strong>Moon</strong> - Cycles & Memory</li>
+                    <li>👁️ <strong>Secrets</strong> - Knowledge & Mystery</li>
+                    <li>🏹 <strong>Hunt</strong> - Instinct & Focus</li>
+                    <li>⛓️ <strong>Remorse</strong> - Forgiveness & Guilt</li>
+                    <li>☀️ <strong>Origin</strong> - Unity & Creation</li>
+                </ul>
+            </div>
+
+            <!-- Key NPCs -->
+            <div class="ref-card">
+                <h3>👥 Key NPCs</h3>
+                <table class="ref-table">
+                    <tr>
+                        <td>Hayabusa</td>
+                        <td>Last Azure Guardian</td>
+                    </tr>
+                    <tr>
+                        <td>Lucius</td>
+                        <td>Trapped Hero (Fire)</td>
+                    </tr>
+                    <tr>
+                        <td>Myranda</td>
+                        <td>Trapped Hero (Light)</td>
+                    </tr>
+                    <tr>
+                        <td>Gustav</td>
+                        <td>Trapped Hero (Earth)</td>
+                    </tr>
+                    <tr>
+                        <td>GoD</td>
+                        <td>God of Destruction</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Gameplay Tips -->
+        <div class="content-block">
+            <h2 style="color: var(--azure-light); margin-bottom: var(--spacing-lg);">💡 Strategic Tips</h2>
+
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h4>🎯 Prioritization</h4>
+                    <p>Focus on one kingdom at a time. Complete character arcs before moving to the next region for maximum story coherence.</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>⏰ Time Management</h4>
+                    <p>Don't panic about the 30-day deadline! Main quests don't consume time. Use your days for exploration and relationship building.</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>💬 Character Choice</h4>
+                    <p>You can only focus on ONE character per city. Choose based on your preferred class or story theme. Other characters continue off-screen.</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>🗺️ Monument Order</h4>
+                    <p>While you can complete monuments in any order, consider your party composition. Get support classes (Synergist) early for easier progression.</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>🎭 Replayability</h4>
+                    <p>The game is designed for multiple playthroughs. Each character path reveals different aspects of the story. Try different combinations!</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>⚡ AP Efficiency</h4>
+                    <p>Plan your 3 AP uses each day. Balance combat progression (dungeons) with social activities (Hang Out) for optimal growth.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Combat Reference -->
+        <div class="content-block">
+            <h2 style="color: var(--azure-light); margin-bottom: var(--spacing-lg);">⚔️ Combat Quick Reference</h2>
+
+            <div class="table-container">
+                <table class="monuments-table">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Role</th>
+                            <th>Best For</th>
+                            <th>Party Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong style="color: var(--guardian-blue);">Guardian</strong></td>
+                            <td>Tank / CC / Debuff</td>
+                            <td>Frontline protection</td>
+                            <td>Front</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--swordmaster-red);">Swordmaster</strong></td>
+                            <td>Melee DPS</td>
+                            <td>High single-target damage</td>
+                            <td>Front</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--ravager-purple);">Ravager</strong></td>
+                            <td>Sub-DPS / CC</td>
+                            <td>Disruption & control</td>
+                            <td>Mid</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--marksman-green);">Marksman</strong></td>
+                            <td>Ranged DPS</td>
+                            <td>Safe consistent damage</td>
+                            <td>Back</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--mystic-pink);">Mystic</strong></td>
+                            <td>Magical DPS</td>
+                            <td>AoE & burst damage</td>
+                            <td>Back</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--synergist-yellow);">Synergist</strong></td>
+                            <td>Support / Healer</td>
+                            <td>Team sustainability</td>
+                            <td>Back</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tip-box" style="margin-top: var(--spacing-lg);">
+                <strong>Party Composition Tip:</strong> A balanced party typically includes 1 Tank (Guardian), 1-2 DPS (Swordmaster/Marksman/Mystic), 1 Sub-DPS (Ravager), and 1 Support (Synergist).
+            </div>
+        </div>
+
+        <!-- Story Progression Guide -->
+        <div class="content-block">
+            <h2 style="color: var(--azure-light); margin-bottom: var(--spacing-lg);">📖 Story Progression Flow</h2>
+
+            <div class="gameplay-flow">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <h3>Chapter 1: Awakening</h3>
+                    <p>Complete your first city's intro quests. Explore and meet all three main characters.</p>
+                </div>
+
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <h3>Chapter 2: The Deadline</h3>
+                    <p>After first dungeon, encounter GoD. Hayabusa saves you and gives you Azure. 30-day countdown begins!</p>
+                </div>
+
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <h3>Chapters 3-10: The Kingdoms</h3>
+                    <p>Travel to all 4 kingdoms. Choose ONE character per kingdom to focus on. Complete their Azure Arc.</p>
+                </div>
+
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-step">
+                    <div class="step-number">4</div>
+                    <h3>Chapter 11: Convergence</h3>
+                    <p>Once all 9 monuments are lit, Palmacy transforms into Azure Citadel. Prepare for final battle.</p>
+                </div>
+
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-step">
+                    <div class="step-number">5</div>
+                    <h3>Chapter 12: Babel Tower</h3>
+                    <p>Confront GoD. Decide the fate of Lucius, Myranda, and Gustav. Multiple endings possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Secrets -->
+        <div class="content-block">
+            <h2 style="color: var(--azure-light); margin-bottom: var(--spacing-lg);">🔮 Secrets & Unlockables</h2>
+
+            <div class="info-box info">
+                <h4>New Game+</h4>
+                <p>After completing the game once, you unlock NG+ mode. This allows you to:</p>
+                <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                    <li>Start with all Azure Resonance from previous playthrough</li>
+                    <li>Access hidden character conversations</li>
+                    <li>Unlock true ending if all 12 character arcs completed across playthroughs</li>
+                </ul>
+            </div>
+
+            <div class="info-box warning">
+                <h4>Endless Tower</h4>
+                <p>Unlocks after completing any 3 Azure Monuments. Procedurally generated challenge tower with exclusive rewards. Perfect for grinding materials and testing builds!</p>
+            </div>
+
+            <div class="info-box critical">
+                <h4>Secret Ending Requirements</h4>
+                <p>To unlock the true ending:</p>
+                <ul style="margin-left: var(--spacing-lg); margin-top: var(--spacing-sm);">
+                    <li>Complete all 12 character arcs (across multiple playthroughs)</li>
+                    <li>Light all 9 Azure Monuments</li>
+                    <li>Reach Babel Tower with all heroes' memories collected</li>
+                    <li>Make the "third choice" when confronting GoD</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-quote">
+                    "You cannot save everyone, but every soul you touch leaves its Azure light upon the sky."
+                </p>
+                <div class="footer-divider"></div>
+                <p class="footer-copyright">Azure Knights © 2025 | Quick Reference Guide v1.0</p>
+                <a href="index.html" class="back-link" style="margin-top: var(--spacing-lg);">← Back to Full Documentation</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
